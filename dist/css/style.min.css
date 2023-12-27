@@ -183,6 +183,17 @@ textarea {
   margin: 10px 0;
 }
 
+.quoted {
+  position: relative;
+}
+
+.quoted__disabled {
+  width: 90%;
+  height: 30px;
+  position: absolute;
+  bottom: -4px;
+}
+
 @media (max-width: 480px) {
   .currency-rate__title {
     font-size: 13px;
