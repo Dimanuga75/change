@@ -45,7 +45,8 @@ body {
   font-family: BriosoPro Italic;
   margin: 0 auto;
   min-width: 320px;
-  background-color: #fffbf8;
+  background: var(--tg-theme-bg-color);
+  color: var(--tg-theme-text-color);
   width: 100%;
 }
 
