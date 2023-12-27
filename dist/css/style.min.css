@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: Roboto;
   font-display: swap;
@@ -67,6 +68,22 @@ body {
   justify-content: center;
   min-width: 320px;
   padding: 0 15px;
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  top: -10px;
+  right: 8px;
+  font-size: 24px;
+}
+
+.close::after {
+  content: "×";
+  width: 20px;
+  height: 20px;
+  font-size: 24px;
+  color: #000;
 }
 
 .rate__thb {
@@ -162,21 +179,18 @@ textarea {
   transform: translateY(2px);
 }
 
-.pay__item {
-  display: flex;
-  align-items: center;
-  column-gap: 5px;
-}
-
 .pay__title {
   margin: 10px 0;
 }
 
 @media (max-width: 480px) {
   .currency-rate__title {
-    font-size: 14px;
+    font-size: 13px;
   }
   .currency-rate__box {
-    column-gap: 10px;
+    column-gap: 5px;
+  }
+  .currency-rate__item {
+    font-size: 26px;
   }
 }
