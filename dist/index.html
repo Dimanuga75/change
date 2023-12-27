@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="files/reset.css" />
+  <link rel="stylesheet" href="css/style.min.css" />
+  <title>Обменник Таиланд</title>
+</head>
+
+  <body>
+    <div class="wrapper"><div class="currency__wrapper">
+  <form class="currency__box">
+    <div class="rate__thb">Конвертер THB</div>
+    <div class="currency-rate__box">
+      <div class="currency-rate__items">
+        <div class="currency-rate__title">Курс RUB</div>
+        <div class="currency-rate__item" id="RUB"></div>
+      </div>
+      <div class="currency-rate__items">
+        <div class="currency-rate__title">Курс USD</div>
+        <div class="currency-rate__item" id="USD"></div>
+      </div>
+      <div class="currency-rate__items">
+        <div class="currency-rate__title">Курс USDT</div>
+        <div class="currency-rate__item" id="USDT"></div>
+      </div>
+    </div>
+    <div class="select__box">
+      <div class="select__item">
+        <div class="select__title">Отдаёте</div>
+        <select name="base_currency" id="base_currency">
+          <optgroup class="group__title" label="Выберите базовую валюту">
+            <option class="group__item" value="THB" selected>THB</option>
+            <option class="group__item" value="RUB">RUB</option>
+            <option class="group__item" value="USD">USD</option>
+            <option class="group__item" value="USDT">USDT</option>
+          </optgroup>
+        </select>
+        <div class="input__title">Введите сумму</div>
+        <input
+          class="select__item-input"
+          type="number"
+          value="2000"
+          step="1"
+          name="base"
+          id="input"
+        />
+      </div>
+      <div class="select__item">
+        <div class="select__title">Получаете</div>
+        <select name="quoted_currency" id="quoted_currency">
+          <optgroup class="group__title" label="Выберите котируемою валюту">
+            <option class="group__item" value="THB">THB</option>
+            <option class="group__item" value="RUB" selected>RUB</option>
+            <option class="group__item" value="USD">USD</option>
+            <option class="group__item" value="USDT">USDT</option>
+          </optgroup>
+        </select>
+        <div class="input__title">Результат</div>
+        <input
+          class="select__item-input"
+          type="number"
+          value="2000"
+          step="1"
+          name="quoted"
+          id="result"
+          disabled
+        />
+      </div>
+    </div>
+    <div class="pay__title">Выберите способ оплаты</div>
+    <div class="pay__box">
+      <div class="pay__item">
+        <input
+          class="check"
+          type="radio"
+          id="bank"
+          name="payment"
+          value="bank"
+          checked
+        />
+        <label class="label" for="bank">Банковский счёт</label>
+      </div>
+      <div class="pay__item">
+        <input
+          class="check"
+          type="radio"
+          id="bankomat"
+          name="payment"
+          value="bankomat"
+        />
+        <label class="label" for="bankomat">Банкомат</label>
+      </div>
+      <div class="pay__item">
+        <input
+          class="check"
+          type="radio"
+          id="dostavka"
+          name="payment"
+          value="dostavka"
+        />
+        <label class="label" for="dostavka">Доставка</label>
+      </div>
+    </div>
+    <button class="send__btn" type="submit">Отправить</button>
+  </form>
+</div>
+</div>
+    <!--<script src="js/app.js"></script>-->
+    <script src="js/app.min.js"></script>
+  </body>
+</html>

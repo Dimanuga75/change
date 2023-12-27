@@ -1,0 +1,182 @@
+@font-face {
+  font-family: Roboto;
+  font-display: swap;
+  src: url("../fonts/Roboto-Regular.woff2") format("woff2"), url("../fonts/Roboto-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: SFProDisplay;
+  font-display: swap;
+  src: url("../fonts/SFProDisplay-Bold.woff2") format("woff2"), url("../fonts/SFProDisplay-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: SFProDisplay;
+  font-display: swap;
+  src: url("../fonts/SFProDisplay-Medium.woff2") format("woff2"), url("../fonts/SFProDisplay-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: SFProDisplay;
+  font-display: swap;
+  src: url("../fonts/SFProDisplay-Heavy.woff2") format("woff2"), url("../fonts/SFProDisplay-Heavy.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: SFProDisplay;
+  font-display: swap;
+  src: url("../fonts/SFProDisplay-Regular.woff2") format("woff2"), url("../fonts/SFProDisplay-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: SFProDisplay;
+  font-display: swap;
+  src: url("../fonts/SFProDisplay-Light.woff2") format("woff2"), url("../fonts/SFProDisplay-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+body {
+  font-family: BriosoPro Italic;
+  margin: 0 auto;
+  min-width: 320px;
+  background-color: #fffbf8;
+  width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  max-width: 1600px;
+  width: 100%;
+  min-height: 100%;
+  padding: 0;
+}
+
+.currency__wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  min-width: 320px;
+  padding: 0 15px;
+}
+
+.rate__thb {
+  margin-bottom: 24px;
+  font-weight: 700;
+  font-size: 36px;
+}
+
+.currency-rate__box {
+  display: flex;
+  margin-bottom: 24px;
+  justify-content: space-between;
+  column-gap: 20px;
+}
+
+.currency-rate__title {
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.currency-rate__items {
+  border: 1px solid #d4d4d4;
+  padding: 12px;
+  border-radius: 5px;
+}
+
+.currency-rate__item {
+  font-size: 28px;
+  text-align: center;
+}
+
+.select__box {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 16px;
+}
+
+textarea {
+  padding: 5px;
+  border: 1px solid #d4d4d4;
+  border-radius: 5px;
+  margin-bottom: 18px;
+}
+
+.select__title {
+  margin-bottom: 8px;
+}
+
+.select__item select {
+  width: 90%;
+  border: 1px solid #d4d4d4;
+  padding: 4px;
+  border-radius: 5px;
+  margin-bottom: 16px;
+}
+
+.input__title {
+  margin-bottom: 4px;
+}
+
+.select__item input {
+  width: 90%;
+  border: 1px solid #d4d4d4;
+  padding: 4px;
+  border-radius: 5px;
+}
+
+.send__btn {
+  display: block;
+  background-color: #808080;
+  padding: 10px 20px 10px;
+  text-transform: uppercase;
+  line-height: 1;
+  border-radius: 5px;
+  color: #fff;
+  margin-top: 20px;
+}
+
+.check {
+  margin: 0;
+}
+
+.pay__box {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.label {
+  line-height: 1;
+  transform: translateY(2px);
+}
+
+.pay__item {
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+}
+
+.pay__title {
+  margin: 10px 0;
+}
+
+@media (max-width: 480px) {
+  .currency-rate__title {
+    font-size: 14px;
+  }
+  .currency-rate__box {
+    column-gap: 10px;
+  }
+}
