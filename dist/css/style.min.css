@@ -195,3 +195,7 @@ textarea {
     font-size: 26px;
   }
 }
+input:disabled {
+  background: #fff;
+  color: #000;
+}
